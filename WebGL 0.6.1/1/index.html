@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Interactive_Asas Dunia 2020</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1920px; height: 1080px; background: #828080"></canvas>
+    <script src="Build/WebGL 0.6.1.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebGL 0.6.1.data",
+        frameworkUrl: "Build/WebGL 0.6.1.framework.js",
+        codeUrl: "Build/WebGL 0.6.1.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Interactive_Asas Dunia 2020",
+        productVersion: "0.6",
+      });
+    </script>
+  </body>
+</html>

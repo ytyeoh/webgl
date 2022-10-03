@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | My project</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #828080"></canvas>
+    <script src="Build/car.loader.js"></script>
+      
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/car.data.gz",
+        frameworkUrl: "Build/car.framework.js.gz",
+        codeUrl: "Build/car.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "My project",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
